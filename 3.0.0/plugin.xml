@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="com.phonegap.plugins.AppPreferences"
+    version="3.0.0">
+
+    <name>InAppBilling</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+ <!-- android -->
+    <platform name="android">
+
+         <js-module src="www/android/applicationPreferences.js" name="AppPreferences">
+            <merges target="AppPreferences" />
+        </js-module>
+
+        <source-file src="src/com/simonmacdonald/prefs/AppPreferences.java" target-dir="src/com/simonmacdonald/prefs" />
+    </platform>
+</plugin>
